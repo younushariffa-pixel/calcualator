@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Quick Bite Café</h1>
+        <p class="subtitle">Select your food, calculate your bill!</p>
+
+        <section class="menu">
+            <div class="menu-item">
+                <label for="qtySandwich">Veg Sandwich</label>
+                <span class="price">₹80</span>
+                <input type="number" id="qtySandwich" min="0" step="1" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="qtyBurger">Burger</label>
+                <span class="price">₹120</span>
+                <input type="number" id="qtyBurger" min="0" step="1" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="qtyFries">French Fries</label>
+                <span class="price">₹70</span>
+                <input type="number" id="qtyFries" min="0" step="1" value="0">
+            </div>
+
+            <div class="menu-item">
+                <label for="qtyJuice">Juice</label>
+                <span class="price">₹50</span>
+                <input type="number" id="qtyJuice" min="0" step="1" value="0">
+            </div>
+        </section>
+
+        <div class="actions">
+            <button id="calculateBtn">Calculate Bill</button>
+            <button id="resetBtn" class="reset-btn">Reset Order</button>
+        </div>
+
+        <p id="message" role="status"></p>
+
+        <section id="bill" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
